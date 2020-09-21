@@ -1,0 +1,41 @@
+.login-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.login-btn {
+  margin: 1rem auto;
+}
+
+@media screen and (min-width: 760px) {
+  .login-container {
+    margin-top: 4rem;
+
+    & > label {
+      font-size: 2rem;
+    }
+
+    & > input {
+      height: 40px;
+    }
+  }
+
+  .login-btn {
+    width: 300px;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .login-container {
+    & > input {
+      width: 500px;
+    }
+  }
+
+  .login-btn {
+    width: 350px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}

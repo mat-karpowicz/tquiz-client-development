@@ -1,0 +1,54 @@
+.landing-container {
+  min-height: 300px;
+  align-self: center;
+}
+
+@media screen and (min-width: 760px) {
+  .landing {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem;
+  }
+
+  .landing-container {
+    & > a {
+      margin-top: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  .landing {
+    margin-top: 6rem;
+  }
+
+  .landing-container {
+    & > a {
+      margin-top: 2rem;
+
+      & > button {
+        width: 300px;
+        height: 70px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 2400px) {
+  .landing {
+    width: 70%;
+    margin: auto;
+    margin-top: 6rem;
+  }
+
+  .landing-container {
+    & > a {
+      margin-top: 2rem;
+
+      & > button {
+        height: 80px;
+        width: 350px;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}

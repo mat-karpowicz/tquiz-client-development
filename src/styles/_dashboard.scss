@@ -1,0 +1,67 @@
+.dashboard-container {
+  min-height: 350px;
+  margin-top: 2rem;
+  padding: 10px;
+}
+
+.points {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: $orangeishColor;
+}
+
+.buttons-container {
+  margin-top: 2rem;
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .dashboard-container {
+    margin-top: 5rem;
+  }
+
+  .points {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .dashboard-container {
+    margin-top: 10rem;
+  }
+
+  .points {
+    font-size: 2rem;
+  }
+
+  .buttons-container {
+    & > a {
+      & > button {
+        height: 80px;
+        width: 300px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 2400px) {
+  .points {
+    width: 800px;
+    font-size: 3rem;
+  }
+
+  .buttons-container {
+    & > a {
+      & > button {
+        width: 450px;
+        height: 90px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

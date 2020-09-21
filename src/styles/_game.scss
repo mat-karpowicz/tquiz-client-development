@@ -1,0 +1,130 @@
+.type-picker {
+  min-height: 350px;
+}
+
+.instruction {
+  margin-top: 1rem;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.picker-btns {
+  min-height: 150px;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  justify-items: center;
+  margin-top: 2rem;
+  padding: 0 25px;
+}
+
+.category-box {
+  display: flex;
+  min-height: 180px;
+  min-width: 120px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  background: rgba(rgb(64, 111, 133), 0.6);
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  overflow: hidden;
+
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+
+  transition: font-size 300ms;
+  -webkit-transition: font-size 300ms;
+  -moz-transition: font-size 300ms;
+  -ms-transition: font-size 300ms;
+  -o-transition: font-size 300ms;
+
+  &:hover {
+    font-size: 1rem;
+  }
+}
+
+.ready {
+  margin-top: 5rem;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+
+  & > button {
+    margin-top: 30px;
+    font-size: 1rem;
+  }
+}
+
+.summary {
+  min-height: 300px;
+  margin-top: 3rem;
+}
+
+.slide-out {
+  animation: slideOut 1s forwards;
+  -webkit-animation: slideOut 1s forwards;
+}
+
+@media screen and (min-width: 760px) {
+  .type-picker {
+    margin-top: 5rem;
+  }
+  .instruction {
+    margin-top: 2rem;
+    font-size: 1.9rem;
+  }
+  .picker-btns {
+    height: 200px;
+    & > button {
+      height: 70px;
+      width: 300px;
+      font-size: 1.4rem;
+    }
+  }
+  .category-container {
+    margin-top: 4rem;
+  }
+  .category-box {
+    font-size: 1.2rem;
+    &:hover {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .type-picker {
+    margin-top: 10rem;
+    min-height: 500px;
+  }
+  .instruction {
+    font-size: 2.4rem;
+  }
+  .picker-btns {
+    height: 300px;
+
+    & > button {
+      height: 90px;
+      width: 450px;
+      font-size: 2rem;
+    }
+  }
+  .category-box {
+    font-size: 1.5rem;
+    &:hover {
+      font-size: 1.7rem;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "./variables";
+@import "./globals";
+@import "./navigation";
+@import "./landing";
+@import "./titleContainer";
+@import "./about";
+@import "./login";
+@import "./dashboard";
+@import "./game";
+@import "./questions";
+@import "./loader.scss";
+@import "./animations";
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(rgba(16, 15, 29, 0.9), rgba(47, 46, 104, 0.9)),
+    url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 2;
+}
