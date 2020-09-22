@@ -6,12 +6,13 @@
 ## General info
 This is client app for Trivia Quiz App. It is made with React (create-react-app). 
 
-Client is hosted with Netlify.
+Client is hosted on Netlify.
+Server is hosted on Heroku.
 
 Client Live: 
 Server Live: 
 
-Server repo: https://github.com/mat-karpowicz/myskillsapi-client
+Server repo: https://github.com/mat-karpowicz/tquiz-server-development
 
 
 ## CheckMeOut
